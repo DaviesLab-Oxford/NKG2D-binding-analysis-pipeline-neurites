@@ -9,19 +9,19 @@ dir3 = getDirectory("select 'NKG2D_drawing particles' folder");
 for(a=0; a<list.length; a++) 
 
 {
-	open(dir+list[a]);
-	wait(200);
-	imageTitle=getTitle();
+open(dir+list[a]);
+wait(200);
+imageTitle=getTitle();
 	
-	open(dir2+list2[a]);
-	wait(200);
-	imageTitle2=getTitle();
+open(dir2+list2[a]);
+wait(200);
+imageTitle2=getTitle();
 	
-	selectImage(imageTitle);
-	run("Z Project...", "projection=[Max Intensity]");
-    run("Split Channels");
-	selectImage(imageTitle);
-	close;
+selectImage(imageTitle);
+run("Z Project...", "projection=[Max Intensity]");
+run("Split Channels");
+selectImage(imageTitle);
+close;
 
 selectWindow(imageTitle2);
 run("Create Selection");
@@ -56,7 +56,7 @@ run("Create Selection");
 run("Analyze Particles...", "size=0.1-25 circularity=0-1.00 show=[Bare Outlines] summarize stack");
 selectWindow("Drawing of C2-MAX_"+imageTitle);
 saveAs("Tiff", dir3+"Drawing of C2-MAX_"+imageTitle);
-	close();
+close();
 	
 	
 selectWindow("C1-MAX_"+imageTitle);
