@@ -9,10 +9,10 @@ dir3 = getDirectory("select 'Threshold and Transform' output folder");
 for(a=0; a<list.length; a++) 
 {
 
-	open(dir+list[a]);
-	wait(200);
+open(dir+list[a]);
+wait(200);
 	
-	imageTitle=getTitle();
+imageTitle=getTitle();
 
 run("Z Project...", "projection=[Max Intensity]");
 run("Split Channels");
