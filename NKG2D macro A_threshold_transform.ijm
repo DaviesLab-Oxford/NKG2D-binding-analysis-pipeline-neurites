@@ -1,3 +1,5 @@
+'Making new folders: 1_'input dir' for raw data; 2_'Neuron single channel'for generated single channel images; 3_'Threshold and Transform'for segmented images'
+
 dir = getDirectory("select input dir");
 list = getFileList(dir);
 
@@ -18,7 +20,7 @@ saveAs("Tiff", dir2+"C2-MAX_"+imageTitle);
 	imageTitle2=getTitle();
 run("Set Scale...", "Image.removeScale");
 run("Threshold...");
-setThreshold(65, 255, "raw");
+setThreshold(65, 255, "raw"); 'Modifing the threshold based on your own data'
 setOption("BlackBackground", true);
 run("Convert to Mask");
 run("Divide...", "value=255");
