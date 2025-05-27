@@ -29,30 +29,30 @@ run("Create Selection");
 run("Enlarge...", "enlarge=10");
 selectWindow("C1-MAX_"+imageTitle);
 run("Restore Selection");
-run("Clear", "slice"); 'Deleting soma from the images. Only analysing axons in the next steps'
+run("Clear", "slice"); 'Deleting soma from the images.'
 setThreshold(50, 255, "raw");
 run("Create Selection");
 run("Enlarge...", "enlarge=0.5");
-run("Make Inverse");
+run("Make Inverse"); 
 
 selectWindow("C2-MAX_"+imageTitle);
-run("Restore Selection");
+run("Restore Selection"); 
 
 selectWindow("C3-MAX_"+imageTitle);
 run("Restore Selection");
-run("Clear", "slice");
+run("Clear", "slice"); 'Deleting BtubIII-negative area. Only analysing axons in the next steps'
 run("Select None");
 
 selectWindow("C2-MAX_"+imageTitle);
-run("Clear", "slice");
+run("Clear", "slice"); 'Deleting BtubIII-negative area. Only analysing axons in the next steps'
 run("Select None");
 
 selectWindow("C1-MAX_"+imageTitle);
-run("Clear", "slice");
+run("Clear", "slice"); 'Deleting BtubIII-negative area. Only analysing axons in the next steps'
 run("Select None");
 
 selectWindow("C2-MAX_"+imageTitle);
-setThreshold(65, 255, "raw");
+setThreshold(65, 255, "raw"); 'Adjusting the the threshold based on your own data'
 run("Create Selection");
 run("Analyze Particles...", "size=0.1-25 circularity=0-1.00 show=[Bare Outlines] summarize stack");
 selectWindow("Drawing of C2-MAX_"+imageTitle);
@@ -80,7 +80,7 @@ selectWindow("C1-MAX_"+imageTitle);
 run("Select None");
 
 selectWindow("C3-MAX_"+imageTitle);
-setThreshold(30, 255, "raw");
+setThreshold(30, 255, "raw"); 'Adjusting the the threshold based on your own data'
 run("Despeckle");
 run("Create Selection");
 run("Enlarge...", "enlarge=1.5");
@@ -108,7 +108,7 @@ run("Analyze Particles...", "size=0.1-25 circularity=0.00-1.00 include summarize
 
 roiManager("Deselect");
 roiManager("Delete");
-selectWindow("C1-MAX_"+imageTitle);
+selectWindow("C1-MAX_"+imageTitle); 
 close("C1-MAX_"+imageTitle);
 selectWindow("C2-MAX_"+imageTitle);
 close("C2-MAX_"+imageTitle);
