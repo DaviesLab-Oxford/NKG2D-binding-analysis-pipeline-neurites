@@ -1,4 +1,4 @@
-'Before running the scripts, making new folders: 1_'input dir' for raw data; 2_'Neuron single channel'for generated single channel images; 3_'Threshold and Transform'for segmented images'
+'Before running the script, making new folders: 1_'input dir' for raw data; 2_'Neuron single channel'for the generated single channel images; 3_'Threshold and Transform'for segmented images'
 
 dir = getDirectory("select input dir");
 list = getFileList(dir);
@@ -6,7 +6,8 @@ list = getFileList(dir);
 dir2 = getDirectory("select 'Neuron single channel' output folder");
 dir3 = getDirectory("select 'Threshold and Transform' output folder");
 
-for(a=0; a<list.length; a++) {
+for(a=0; a<list.length; a++) 
+{
 
 	open(dir+list[a]);
 	wait(200);
@@ -17,7 +18,7 @@ run("Z Project...", "projection=[Max Intensity]");
 run("Split Channels");
 selectWindow("C2-MAX_"+imageTitle);
 saveAs("Tiff", dir2+"C2-MAX_"+imageTitle);
-	imageTitle2=getTitle();
+imageTitle2=getTitle();
 run("Set Scale...", "Image.removeScale");
 run("Threshold...");
 setThreshold(65, 255, "raw"); 'Adjusting the threshold based on your own data'
@@ -27,11 +28,11 @@ run("Divide...", "value=255");
 run("16-bit");
 selectWindow(imageTitle2);
 saveAs("Tiff", dir3+"segm_"+imageTitle2);
-	close();
+close();
 selectWindow("C3-MAX_"+imageTitle);
-	close();
+close();
 selectWindow("C1-MAX_"+imageTitle);
-	close();
+close();
 selectWindow(imageTitle);
-	close();
+close();
 }
