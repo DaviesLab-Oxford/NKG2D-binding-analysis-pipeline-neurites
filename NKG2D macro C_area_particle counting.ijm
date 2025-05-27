@@ -1,3 +1,4 @@
+'Before running the script, making a folder for 'NKG2D_drawing particles' images.
 dir = getDirectory("select 'Original images' dir");
 list = getFileList(dir);
 
@@ -28,7 +29,7 @@ run("Create Selection");
 run("Enlarge...", "enlarge=10");
 selectWindow("C1-MAX_"+imageTitle);
 run("Restore Selection");
-run("Clear", "slice");
+run("Clear", "slice"); 'Deleting soma from the images. Only analysing axons in the next steps'
 setThreshold(50, 255, "raw");
 run("Create Selection");
 run("Enlarge...", "enlarge=0.5");
