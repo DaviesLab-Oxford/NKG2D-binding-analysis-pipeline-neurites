@@ -1,3 +1,4 @@
+'Transforming mask array into soma mask images. Before running the script, making a folder for soma mask'
 dir = getDirectory("select Soma mask input dir");
 list = getFileList(dir);
 
