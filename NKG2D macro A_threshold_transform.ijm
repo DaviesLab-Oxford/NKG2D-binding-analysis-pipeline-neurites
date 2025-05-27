@@ -1,4 +1,4 @@
-'Making new folders: 1_'input dir' for raw data; 2_'Neuron single channel'for generated single channel images; 3_'Threshold and Transform'for segmented images'
+'Before running the scripts, making new folders: 1_'input dir' for raw data; 2_'Neuron single channel'for generated single channel images; 3_'Threshold and Transform'for segmented images'
 
 dir = getDirectory("select input dir");
 list = getFileList(dir);
