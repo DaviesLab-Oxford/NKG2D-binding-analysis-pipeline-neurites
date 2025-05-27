@@ -7,12 +7,9 @@ dir5 = getDirectory("select 'Soma ROI' output folder");
 
 for(a=0; a<list.length; a++) 
 {
-
-	path = dir + list[a];
-	
-	run("Text Image... ", "open=[path]");
-	
-	wait(200);
+path = dir + list[a];	
+run("Text Image... ", "open=[path]");
+wait(200);
 
 imageTitle=getTitle();
 run("8-bit");
