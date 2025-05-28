@@ -8,13 +8,13 @@ The test images (Eample_Test images.zip) can be downloaded from 'files'.
  
 Please run the pipeline by following the steps below:
  
-Step 1: Generate MIP (maximum intensity projection) images of BtubIII+ neurons and segmented images by running script 'NKG2D macro A_threshold_transform.ijm' on Fiji.
+Step 1: Generate MIP (maximum intensity projection) images of BtubIII+ neurons and segmented images by running script 'NKG2D macro A_threshold_transform.ijm' in Fiji.
  
 Step 2: Uploading the generated BtubIII+ and segmented images to the folder on Matlab and run the script 'Matlab_Script_Gaussian'. Soma mask array written in .txt files can be downloaded.
 
-Step 3: Transform mask array into soma mask images by running script 'NKG2D macro B_Soma_mask.ijm' on Fiji.
+Step 3: Transform mask array into soma mask images by running script 'NKG2D macro B_Soma_mask.ijm' in Fiji.
 
-Step 4: Automatically Measure total area of BtubIII+ and BtubIII+Tdtomato+ axons and count NKG2D+ particles within the corresponding axons by running 'NKG2D macro C_area_particle counting.ijm'on fiji.
+Step 4: Automatically Measure total area of BtubIII+ and BtubIII+Tdtomato+ axons and count NKG2D+ particles within the corresponding axons by running 'NKG2D macro C_area_particle counting.ijm'in fiji.
 
 Step 5: Save 'Summary' containing particle counts and 'Results' containing area of axons. 
 
