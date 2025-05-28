@@ -14,9 +14,11 @@ Step 2: Uploading the generated BtubIII+ and segmented images to the folder on M
 
 Step 3: Transform mask array into soma mask images by running script 'NKG2D macro B_Soma_mask.ijm' on Fiji.
 
-Step 4: Measure total area of BtubIII+ and BtubIII+Tdtomato+ axons and count NKG2D+ particles within the corresponding axons by running 'NKG2D macro C_area_particle counting.ijm'on fiji.
+Step 4: Automatically Measure total area of BtubIII+ and BtubIII+Tdtomato+ axons and count NKG2D+ particles within the corresponding axons by running 'NKG2D macro C_area_particle counting.ijm'on fiji.
 
-Step 5: Save 'Calculate NKG2D+ particle density in BtubIII+Tdtomato+ and BtubIII+Tdtomato- axons: 
+Step 5: Save 'Summary' containing particle counts and 'Results' containing area of axons. 
+
+Step 6: Calculate NKG2D+ particle density in BtubIII+Tdtomato+ and BtubIII+Tdtomato- axons: 
         
         total area of BtubIII+Tdtomato- axons = total area of BtubIII+ axons - total area of BtubIII+Tdtomato+ axons; 
         
