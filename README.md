@@ -2,7 +2,7 @@
 
 We share a pipeline for semi-automatically quantifying NKG2D binding on axons by using scripts based on Matlab and Fiji. It can be applied to other experiments for analysing the binding of a protein to axons of neurons.
 
-Before running the pipeline, please see 'MATLAB online_installation.docx' for installing the package (SomaExtraction-master) on Matlab (online or desktop version). 
+Before running the pipeline, please see 'MATLAB online_installation.PDF' for installing the package (SomaExtraction-master) on Matlab (online or desktop version). 
 
 The test images (Eample_Test images.zip) can be downloaded from 'files'.
  
