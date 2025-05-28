@@ -1,6 +1,6 @@
 # NKG2D-binding-neurites-analysis-pipeline
 
-We share a pipeline for semi-automatically quantifying NKG2D binding on axons by using scripts based on Matlab and Fiji. It can be applied to other experiments for analysing the binding of a protein to axons of neurons.
+We share a pipeline for semi-automatically quantifying NKG2D binding on axons by using scripts based in Matlab and Fiji. It can be applied to other experiments for analysing the binding of a protein to axons of neurons.
 
 Before running the pipeline, please see 'MATLAB online_installation.PDF' for installing the package (SomaExtraction-master) on Matlab (online or desktop version). 
 
